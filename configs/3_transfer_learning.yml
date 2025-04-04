@@ -16,9 +16,9 @@ Network_Hyperparameters:
   normalization: 'None'                       # normalization layer [None/BatchNorm/LayerNorm/InstanceNorm/GroupNorm]
 
 Training_Hyperparameters:
-  epochs: 30                                  # no. training epochs
-  batch_size: 1                               # batch size
-  learning_rate: 0.0001                       # learning rate
+  epochs: 100                                  # no. training epochs
+  batch_size: 4                               # batch size
+  learning_rate: 0.0002                       # learning rate
   input_image_size: 16                        # input image size (conly applies to Super-Resolution)
   target_image_size: 16                       # target image size (only applies to images)
   spectrum_length: 1340                       # sm/Adagrad/SGD/RMSprop]
