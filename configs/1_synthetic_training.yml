@@ -53,9 +53,9 @@ DataManager_Options:
   test_target_data: 'None'                                           # path to testing target data ('None' if N/A)
   shuffle: 'False'                                                   # shuffle data [True/False]
   seed: 'None'                                                       # random seed for data shuffling [integer value or 'None']
-  train_split: 70                                                # percentage of data used for training set [0.0 - 1.0 or 'None']
-  val_split: 15                                                  # percentage of data used for validation set [0.0 - 1.0 or 'None']
-  test_split: 15                                                 # percentage of data used for testing set [0.0 - 1.0 or 'None']
+  train_split: 80                                                # percentage of data used for training set [0.0 - 1.0 or 'None']
+  val_split: 10                                                  # percentage of data used for validation set [0.0 - 1.0 or 'None']
+  test_split: 10                                                 # percentage of data used for testing set [0.0 - 1.0 or 'None']
 
 State_Dicts:
   net_state_dict: 'None'                        # network state dict (if pretrained_network != 'None')
