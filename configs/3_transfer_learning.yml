@@ -17,7 +17,7 @@ Network_Hyperparameters:
 
 Training_Hyperparameters:
   epochs: 100                                  # no. training epochs
-  batch_size: 4                               # batch size
+  batch_size: 2                               # batch size
   learning_rate: 0.0002                       # learning rate
   input_image_size: 16                        # input image size (conly applies to Super-Resolution)
   target_image_size: 16                       # target image size (only applies to images)
