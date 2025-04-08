@@ -11,11 +11,11 @@ python synthetic_data_generation.py
 ```
 Train the model:
 ```python
-python train.py  -- config custom_config.yml --verbose
+python train.py  --config custom_config.yml --verbose
 ```
 Evaluate results:
 ```python
-python apply.py  -- config custom_config.yml
+python apply.py  --config custom_config.yml
 ```
 
 The commands above will operate on default configs , from which six steps of model optimization could be achieved.   
