@@ -6,7 +6,7 @@ Task_Options:
 
 Training_Options:
   training_option: 'Apply Pre-Trained Network'       # training option ['Apply Pre-Trained Network'/'Train From Scratch'/'Transfer Learning']
-  pretrained_network: "saved_models/Post_TL.pt"                  # path to pretrained network, 'None' if training_option = 'Train From Scratch'
+  pretrained_network: "saved_models/Pre_TL.pt"                  # path to pretrained network, 'None' if training_option = 'Train From Scratch'
   pretrained_classes: 0                       # no. classes for pretrained Classification or Segmentation model, zero otherwise
 
 Network_Hyperparameters:
@@ -30,14 +30,14 @@ Preprocessing:
   spectral_crop_start: 0                      # start index for spectral crop window
   spectral_crop_end: 1340                     # end index for spectral crop window
   background_subtraction: 'None'              # spectral background subtraction [None/'Automatic Least Squares'/'3rd Order Polynomial'/'5th Order Polynomial'/'Minimum Value Offset']
-  data_normalization: 'None'             # spectral normalization [None/'Max Value'/'Area Under The Curve']
+  data_normalization: 'None'                  # spectral normalization [None/'Max Value'/'Area Under The Curve']
 
 Data_Augmentation:
   horizontal_flip: 0                          # horizontal flip (images)
   vertical_flip: 0                            # vertical flip (images)
   rotation: 0                                 # rotation (images)
   random_crop: 0                              # random crop (images)
-  spectral_shift: 0                            # spectral shift (spectra, images)
+  spectral_shift: 0                           # spectral shift (spectra, images)
   spectral_flip: 0                            # spectral flip (spectra, images)
   spectral_background: 0                      # add spectral background signal (spectra, images)
   mixup: 0                                    # mixup (spectra, images)
@@ -47,7 +47,7 @@ DataManager_Options:
   data_directory: 'False'                                            # is data input a directory [True] or a file [False]
   train_input_data: "None"           # path to training input data ('None' if N/A)
   val_input_data: 'None'                                             # path to validation input data ('None' if N/A)
-  test_input_data: 'data/4.Testing on biochemical compound(Urea+L-arginine)/input_for_applying_on_compound_(urea+larginine).mat'                                            # path to testing input data ('None' if N/A)
+  test_input_data: 'data/3.Experimental Testing (Polystyrene)/input_for_applying_on_polystyrene.mat'                                            # path to testing input data ('None' if N/A)
   train_target_data: 'None'        # path to training target data ('None' if N/A)
   val_target_data: 'None'                                           # path to validation target data ('None' if N/A)
   test_target_data: 'None'                                           # path to testing target data ('None' if N/A)
