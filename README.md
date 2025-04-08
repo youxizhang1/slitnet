@@ -7,7 +7,7 @@ Please refer to https://github.com/conor-horgan/spectrai
 
 Generate synthetic data:
 ```python
-python Synthetic_Data_Generation.py
+python synthetic_data_generation.py
 ```
 Train the model:
 ```python
@@ -20,7 +20,7 @@ python apply.py  -- config custom_config.yml
 
 The commands above will operate on default configs , from which six steps of model optimization could be achieved.   
 
-0.  Generating synthetic data ( Synthetic_Data_Generation.py ) 
+0.  Generating synthetic data 
 1.	Training on synthetic data 
 2.	Applying on synthetic data and experimental data ( Polystyrene )
 3.	Transfer learning on chemicals 
