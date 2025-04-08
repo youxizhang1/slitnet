@@ -6,7 +6,7 @@ Task_Options:
 
 Training_Options:
   training_option: 'Transfer Learning'       # training option ['Apply Pre-Trained Network'/'Train From Scratch'/'Transfer Learning']
-  pretrained_network: "saved_models/Denoising_ResUNet_pre_tl.pt"                  # path to pretrained network, 'None' if training_option = 'Train From Scratch'
+  pretrained_network: "saved_models/Pre_TL.pt"                  # path to pretrained network, 'None' if training_option = 'Train From Scratch'
   pretrained_classes: 0                       # no. classes for pretrained Classification or Segmentation model, zero otherwise
 
 Network_Hyperparameters:
