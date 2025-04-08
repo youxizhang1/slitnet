@@ -47,7 +47,7 @@ DataManager_Options:
   data_directory: 'False'                                            # is data input a directory [True] or a file [False]
   train_input_data: "None"           # path to training input data ('None' if N/A)
   val_input_data: 'None'                                             # path to validation input data ('None' if N/A)
-  test_input_data: 'data/test_input_spectra/input_for_applying_on_compound_(urea+larginine).mat'                                            # path to testing input data ('None' if N/A)
+  test_input_data: 'data/4.Testing on biochemical compound(Urea+L-arginine)/input_for_applying_on_compound_(urea+larginine).mat'                                            # path to testing input data ('None' if N/A)
   train_target_data: 'None'        # path to training target data ('None' if N/A)
   val_target_data: 'None'                                           # path to validation target data ('None' if N/A)
   test_target_data: 'None'                                           # path to testing target data ('None' if N/A)
