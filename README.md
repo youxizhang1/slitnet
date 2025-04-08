@@ -27,10 +27,10 @@ The commands above will operate on default configs , from which six steps of mod
 4.	Applying on experimental data ( Polystyrene , compounds of Urea and L-Arginine , compounds of Stearic acid, Glycine and L-Methionine )
 
 ## Data
-1.  Synthetic Training
-2.  Experimental Testing (Polystyrene)
-2.  Synthetic Testing
-3.  Transfer Learning
-4.  Testing on biochemical compounds
+1. Synthetic Training
+2. Experimental Testing (Polystyrene)
+3. Synthetic Testing
+4. Transfer Learning
+5. Testing on biochemical compounds
 ## Environment
 spectrai was implemented and tested in Python 3.8.10 using PyTorch 2.1.0 on a desktop computer with a Core i7-8700 CPU at 3.2 GHz (Intel), 64 GB of RAM, and a Titan V GPU (NVIDIA), running Windows 10 (Microsoft). spectrai has not yet been extensively tested in other environments (it's on our to do list).
