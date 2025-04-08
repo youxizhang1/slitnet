@@ -1,5 +1,5 @@
 # SlitNet
-SlitNet is a spectrometer slit empowered by a deep learning model. Using synthetic data resembling Raman spectra, we trained a neural network to reconstruct synthetic Raman spectra with enhanced resolution and signal-to-noise ratio from low-resolution inputs. Subsequently, we performed transfer learning from synthetic data to experimental Raman data of materials. Through fine-tuning the model with experimental data, we successfully recovered high resolution Raman spectra and discriminated between two materials that were previously indistinguishable using a wide slit.
+SlitNet is a spectrometer slit empowered by a deep learning model that can enhance spectral resolution and signal-to-noise ratio from low-resolution inputs. Using synthetic data resembling Raman spectra, we trained a neural network to reconstruct synthetic Raman spectra with enhanced resolution and signal-to-noise ratio from low-resolution inputs. Subsequently, we performed transfer learning from synthetic data to experimental Raman data of materials. Through fine-tuning the model with experimental data, we successfully recovered high resolution Raman spectra and discriminated between two materials that were previously indistinguishable using a wide slit.
 ## Installation 
 Please refer to https://github.com/conor-horgan/spectrai
 ## Usage
