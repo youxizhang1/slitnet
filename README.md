@@ -1,5 +1,5 @@
 # SlitNET
-SlitNet is a deep learning model designed to enhance the spectral resolution of dispersive spectrometers. Initially, we trained the neural network on synthetic data simulating Raman spectra, enabling it to reconstruct high-resolution spectra with improved signal-to-noise ratio (SNR). We then applied transfer learning to adapt the model from synthetic to experimental Raman data of various materials. By fine-tuning the model with experimental measurements, we successfully recovered high-resolution Raman spectra and distinguished between materials that were previously indistinguishable using a wide slit.
+SlitNet is a deep learning model designed to enhance the spectral resolution of dispersive spectrometers. Initially, we trained the neural network on synthetic data simulating Raman spectra, enabling it to reconstruct high-resolution spectra from low resolution spectra. We then applied transfer learning to adapt the model from synthetic to experimental Raman data of various materials. By fine-tuning the model with experimental measurements, we recovered high-resolution Raman spectra and distinguished between materials that were previously indistinguishable using a wide slit.
 ## Installation 
 The SpectrAI library is used for training and evaluation. Please refer to https://github.com/conor-horgan/spectrai
 ## Usage
@@ -18,7 +18,7 @@ Evaluate results:
 python apply.py  --config custom_config.yml
 ```
 
-The commands above will operate on default configs, from which five steps of model optimization could be achieved.   
+The commands above will operate on default configurations that can be found in the config folder.   
 
 Step 1 : Generation of synthetic data 
 
@@ -34,9 +34,9 @@ Step 5 : Evaluation of model on experimental data (e.g., polystyrene, compounds 
 
 Synthetic training data (pair of low and high resolution spectra)
 
-Experimental data for testing [i.e., polystyrene] (pair of low and high resolution spectra)
-
 Synthetic testing data (pair of low and high resolution spectra)
+
+Experimental data for testing [i.e., polystyrene] (pair of low and high resolution spectra)
 
 Experimental data for transfer learning (pair of low and high resolution spectra)
 
