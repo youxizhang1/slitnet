@@ -20,11 +20,15 @@ python apply.py  --config custom_config.yml
 
 The commands above will operate on default configs , from which five steps of model optimization could be achieved.   
 
-0.  Generating synthetic data 
-1.	Training on synthetic data 
-2.	Evaluating on synthetic data and experimental data ( Polystyrene )
-3.	Transfer learning on biochemicals 
-4.	Evaluating on experimental data ( Polystyrene , compounds of Urea and L-Arginine , compounds of Stearic acid, Glycine and L-Methionine )
+Step 1 : Generating synthetic data 
+
+Step 2 : Training on synthetic data 
+
+Step 3 : Evaluating on synthetic data and experimental data ( Polystyrene )
+
+Step 4 : Transfer learning on biochemicals 
+
+Step 5 : Evaluating on experimental data ( Polystyrene , compounds of Urea and L-Arginine , compounds of Stearic acid, Glycine and L-Methionine )
 
 ## Data
 
