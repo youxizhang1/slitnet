@@ -1,7 +1,7 @@
-# SlitNet
-SlitNet is a spectrometer slit empowered by a deep learning model, that can enhance spectral resolution and signal-to-noise ratio (SNR) from low-resolution inputs. We first trained a neural network using synthetic data that mimics Raman spectra, enabling it to reconstruct high-resolution spectra with improved SNR. Subsequently, we performed transfer learning from synthetic data to experimental Raman data of materials. Through fine-tuning the model with experimental data, we successfully recovered high resolution Raman spectra and discriminated between two materials that were previously indistinguishable using a conventional wide slit.
+# SlitNET
+SlitNet is a deep learning model designed to enhance the spectral resolution of dispersive spectrometers. Initially, we trained the neural network on synthetic data simulating Raman spectra, enabling it to reconstruct high-resolution spectra with improved signal-to-noise ratio (SNR). We then applied transfer learning to adapt the model from synthetic to experimental Raman data of various materials. By fine-tuning the model with experimental measurements, we successfully recovered high-resolution Raman spectra and distinguished between materials that were previously indistinguishable using a wide slit.
 ## Installation 
-Spectrai library is used for training and evaluation. Please refer to https://github.com/conor-horgan/spectrai
+The SpectrAI library is used for training and evaluation. Please refer to https://github.com/conor-horgan/spectrai
 ## Usage
 Please refer to https://github.com/conor-horgan/spectrai
 
@@ -18,28 +18,29 @@ Evaluate results:
 python apply.py  --config custom_config.yml
 ```
 
-The commands above will operate on default configs , from which five steps of model optimization could be achieved.   
+The commands above will operate on default configs, from which five steps of model optimization could be achieved.   
 
-Step 1 : Generating synthetic data 
+Step 1 : Generation of synthetic data 
 
-Step 2 : Training on synthetic data 
+Step 2 : Training of a model on synthetic data 
 
-Step 3 : Evaluating on synthetic data and experimental data ( Polystyrene )
+Step 3 : Testing on synthetic data and/or experimental data (e.g., polystyrene)
 
-Step 4 : Transfer learning on biochemicals 
+Step 4 : Transfer learning using experimental low and high resolution Raman spectra to improve performance 
 
-Step 5 : Evaluating on experimental data ( Polystyrene , compounds of Urea and L-Arginine , compounds of Stearic acid, Glycine and L-Methionine )
+Step 5 : Evaluation of model on experimental data (e.g., polystyrene, compounds of Urea and L-Arginine, compounds of Stearic acid, Glycine and L-Methionine)
 
 ## Data
 
-Synthetic Training
+Synthetic training data (pair of low and high resolution spectra)
 
-Experimental Testing (Polystyrene)
+Experimental data for testing [i.e., polystyrene] (pair of low and high resolution spectra)
 
-Synthetic Testing
+Synthetic testing data (pair of low and high resolution spectra)
 
-Transfer Learning
+Experimental data for transfer learning (pair of low and high resolution spectra)
 
-Testing on biochemical compounds
+Experimental data for testing (pair of low and high resolution spectra)
+
 ## Environment
-spectrai was implemented and tested in Python 3.8.10 using PyTorch 2.1.0 on a desktop computer with a Core i7-8700 CPU at 3.2 GHz (Intel), 64 GB of RAM, and a Titan V GPU (NVIDIA), running Windows 10 (Microsoft). spectrai has not yet been extensively tested in other environments (it's on our to do list).
+SlitNET was developed using SpectrAI and was implemented and tested in Python 3.8.10 using PyTorch 2.1.0 on a desktop computer with a Core i7-8700 CPU at 3.2 GHz (Intel), 64 GB of RAM, and a Titan V GPU (NVIDIA), running Windows 10 (Microsoft). SpectrAI has not yet been extensively tested in other environments (it's on our to do list).
